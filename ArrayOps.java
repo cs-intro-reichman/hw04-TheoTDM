@@ -38,9 +38,9 @@ public class ArrayOps {
             for(int j = 0;j<array2.length;j++){
                 if(array1[i]==array2[j])
                     t = true;
-                if(!t)
-                    return false;
             }
+            if(!t)
+                    return false;
         }
         return true;
     }
