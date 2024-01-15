@@ -7,10 +7,10 @@ public class StringOps {
     public static String capVowelsLowRest (String s) 
     {
         // Write your code here:
-        String ans = "" ;
+        String ans = "";
         boolean test = false;
         for(int i = 0 ; i<s.length() ; i++){
-            test =false;
+            test = false;
             char ch = s.charAt(i);
             if(ch == 97 || ch == 101 || ch == 105 || ch == 111 || ch == 117){
                 ans = ans + (char)(s.charAt(i)-32);
@@ -18,7 +18,8 @@ public class StringOps {
             }
             if(ch > 65 && ch <= 90 && ch != 69 && ch != 73 && ch != 79 && ch != 80){
                 ans = ans +(char)(s.charAt(i) + 32);
-                if(ch >= 65 && ch <= 90){
+            }
+            else if(ch >= 65 && ch <= 90){
                     ans = ans + (char)s.charAt(i);
                 }
             else {
@@ -41,7 +42,7 @@ public class StringOps {
             else if(ch != 32){
                 ans = ans +(char)(s.charAt(i)); 
             }
-            if(ch == 32 && s.charAt(i+1) != 32){
+            if(i != 0 && ch == 32 && s.charAt(i + 1) != 32){
                 if(s.charAt(i + 1) >= 97 && s.charAt(i + 1) <= 122){
                     ans = ans +(char)(s.charAt(i + 1) -32);
                 }
