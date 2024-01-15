@@ -18,8 +18,8 @@ public class StringOps {
             }
             if(ch > 65 && ch <= 69 && ch != 73 && ch != 79 && ch != 80 && ch != 90){
                 ans = ans +(char)(s.charAt(i)+32);
-                else if(ch >= 65 && ch <= 90){
-                    ans = ans + (char)s.charAt(i);
+            else if(ch >= 65 && ch <= 90){
+                ans = ans + (char)s.charAt(i);
                 }
             else {
                 if(test == false)
