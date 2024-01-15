@@ -1,7 +1,7 @@
 public class ArrayOps {
     public static void main(String[] args) {
-        System.out.println(findMissingInt(new int[] {3, 0, 1}));
-        //System.out.println(secondMaxValue(new int[] {3, 0, 1, 5, 6}));
+        int [] arr  = {2,8,3,7,8};
+        System.out.println(secondMaxValue(arr));
     }
     
     public static int findMissingInt (int [] array){
@@ -23,7 +23,7 @@ public class ArrayOps {
         int max = array[0];
         int scmax = array[0];
         for(int i = 1; i<array.length; i++){
-            if(max<array[i]){
+            if(max <= array[i]){
                 scmax = max;
                 max = array[i];
             }
@@ -33,12 +33,12 @@ public class ArrayOps {
 
     public static boolean containsTheSameElements(int [] array1,int [] array2){
         boolean t = false;
-        for(int i = 0 ; i<array1.length ; i++){
-            t = false;
-            for(int j = 0 ; j<array2.length ; j++){
+        for(int i = 0;i<array1.length;i++){
+            t = false
+            for(int j = 0;j<array2.length;j++){
                 if(array1[i]==array2[j])
                     t = true;
-                if(t==false)
+                if(!t)
                     return false;
             }
         }
