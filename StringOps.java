@@ -12,6 +12,10 @@ public class StringOps {
         for(int i = 0 ; i<s.length() ; i++){
             test = false;
             char ch = s.charAt(i);
+           /* 
+  		why didn't you create a helper isVowel()?
+		could be a lot cleaner and more readable.
+  		*/
             if(ch == 97 || ch == 101 || ch == 105 || ch == 111 || ch == 117){
                 ans = ans + (char)(s.charAt(i)-32);
                 test = true;

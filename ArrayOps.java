@@ -8,7 +8,7 @@ public class ArrayOps {
         if(array.length==1)
             return 1;
         for(int i =0 ; i<array.length ; i++){
-            boolean t = false;
+            boolean t = false; // not a meaningful name
             for(int j= 0 ; j<array.length;j++){
                 if(array[j]==i)
                     t = true;
@@ -42,6 +42,7 @@ public class ArrayOps {
             if(!t)
                     return false;
         }
+        //NICE!
         return true;
     }
 
